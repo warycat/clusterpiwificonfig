@@ -1,14 +1,13 @@
+import S from './store.js';
 import * as K from './consts.js';
 import Pi from './pi.js';
+import { observable, computed } from "mobx"
 
 class Cluster {
-    constructor() {
-        this.dict = {};
-        this.script = "ls";
-    }
+    @observable dict = new Map()
 
-    add(id, pi) {
-        this.dict[id] = pi;
+    @computed get n() {
+        return Object.keys(this.dict).length;
     }
 
     async scan() {
@@ -18,22 +17,17 @@ class Cluster {
                 filters: [{ name: K.CLUSTER_PI_DEVICE_NAME }],
                 optionalServices: [K.UART_SERVICE_UUID],
             });
-            let pi = await new Pi(device).init();
-            this.add(pi.id, pi);
+            let pi = new Pi(device);
+            this.dict.set(pi.device.id, pi);
+            pi.init();
         } catch (error) {
             console.log(error);
         }
     }
 
     async send() {
-        for (let id in this.dict) {
-            let pi = this.dict[id];
-            try {
-                let encoder = new TextEncoder();
-                pi.rx.writeValue(encoder.encode(this.script));
-            } catch (error) {
-                console.log(error);
-            }
+        for (let pi of this.dict.values()) {
+            pi.send(S.script);
         }
     }
 
