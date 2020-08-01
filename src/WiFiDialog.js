@@ -10,7 +10,7 @@ import TextField from '@material-ui/core/TextField';
 
 
 const WiFiDialog = observer(() =>
-    <Dialog id="dialog" open={S.open} onClose={() => { S.open = false }} aria-labelledby="form-dialog-title">
+    <Dialog id="dialog" open={S.open} onClose={S.handleClose} aria-labelledby="form-dialog-title">
         <DialogTitle id="form-dialog-title">WiFi</DialogTitle>
         <DialogContent>
             <TextField
@@ -34,10 +34,10 @@ const WiFiDialog = observer(() =>
             />
         </DialogContent>
         <DialogActions>
-            <Button onClick={() => { S.open = false }} color="primary">
+            <Button onClick={S.handleClose} color="primary">
                 Cancel
           </Button>
-            <Button onClick={() => { S.open = false }} color="primary">
+            <Button onClick={S.handleConfirm} color="primary">
                 Confirm
           </Button>
         </DialogActions>
