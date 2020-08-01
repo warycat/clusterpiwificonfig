@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/clusterpiwificonfig/precache-manifest.3e13d5270e84985b13a5d6ae21e01bcc.js"
+  "/clusterpiwificonfig/precache-manifest.578da40d9fcb1489949a8879192db26c.js"
 );
 
 self.addEventListener('message', (event) => {

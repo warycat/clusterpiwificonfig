@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/clusterpiwificonfig/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/clusterpiwificonfig/static/js/main.55e2aab3.chunk.js",
-    "main.js.map": "/clusterpiwificonfig/static/js/main.55e2aab3.chunk.js.map",
+    "main.js": "/clusterpiwificonfig/static/js/main.c6542749.chunk.js",
+    "main.js.map": "/clusterpiwificonfig/static/js/main.c6542749.chunk.js.map",
     "runtime-main.js": "/clusterpiwificonfig/static/js/runtime-main.ab9b3bc6.js",
     "runtime-main.js.map": "/clusterpiwificonfig/static/js/runtime-main.ab9b3bc6.js.map",
     "static/js/2.8d2b6421.chunk.js": "/clusterpiwificonfig/static/js/2.8d2b6421.chunk.js",
     "static/js/2.8d2b6421.chunk.js.map": "/clusterpiwificonfig/static/js/2.8d2b6421.chunk.js.map",
     "index.html": "/clusterpiwificonfig/index.html",
-    "precache-manifest.3e13d5270e84985b13a5d6ae21e01bcc.js": "/clusterpiwificonfig/precache-manifest.3e13d5270e84985b13a5d6ae21e01bcc.js",
+    "precache-manifest.578da40d9fcb1489949a8879192db26c.js": "/clusterpiwificonfig/precache-manifest.578da40d9fcb1489949a8879192db26c.js",
     "service-worker.js": "/clusterpiwificonfig/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/clusterpiwificonfig/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.8d2b6421.chunk.js.LICENSE.txt": "/clusterpiwificonfig/static/js/2.8d2b6421.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ab9b3bc6.js",
     "static/js/2.8d2b6421.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.55e2aab3.chunk.js"
+    "static/js/main.c6542749.chunk.js"
   ]
 }
