@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "45eb637e56fe61afaa05d350c72e5778",
+    "revision": "ff30e9831ded98b2c865ac9c403ad131",
     "url": "/clusterpiwificonfig/index.html"
   },
   {
-    "revision": "eb465f533050cfe5f657",
+    "revision": "ff5ec545d5dd67bebac1",
     "url": "/clusterpiwificonfig/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/clusterpiwificonfig/static/js/2.8d2b6421.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eb465f533050cfe5f657",
-    "url": "/clusterpiwificonfig/static/js/main.c6542749.chunk.js"
+    "revision": "ff5ec545d5dd67bebac1",
+    "url": "/clusterpiwificonfig/static/js/main.585b84d6.chunk.js"
   },
   {
     "revision": "ae1d93b140bb25946855",
