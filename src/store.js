@@ -10,7 +10,20 @@ class Store {
     @observable cluster = new Cluster();
 
     @computed get script() {
-        return `wpa_passphrase ${this.curSsid} ${this.curPassword}`;
+        return `
+S="${this.curSsid}"
+P="${this.curPassword}"
+F="/etc/wpa_supplicant/wpa_supplicant.conf"
+TS=$(wpa_passphrase $S $P | sed -n "/ssid=\\"[^\\"]*\\"/p")
+FS=$(cat $F | sed -n "/ssid=\\"[^\\"]*\\"/p")
+TP=$(wpa_passphrase $S $P | sed "/#psk=\\"[^\\"]*\\"/d" | sed -n "/psk/p")
+FP=$(cat $F | sed "/#psk=\\"[^\\"]*\\"/d" | sed -n "/psk/p")
+sed -i "s/$FS/$TS/" $F
+sed -i "s/$FP/$TP/" $F
+cat $F
+wpa_cli -i wlan0 reconfigure
+hostname -I                
+`;
     }
 
     handleClickOpen = () => {

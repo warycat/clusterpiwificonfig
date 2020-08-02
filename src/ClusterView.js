@@ -10,7 +10,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
 const PiCard = observer(({ pi }) =>
-    <Grid item xs={4}>
+    <Grid item sm={4} xs={12}>
         <Card style={{ margin: 10, borderColor: pi.connected ? "green" : "red" }} variant="outlined">
             <CardContent>
                 <Typography variant="h5" component="h2">

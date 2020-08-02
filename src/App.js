@@ -46,6 +46,7 @@ const App = observer(() => {
           </ButtonGroup>
         </Toolbar>
       </AppBar>
+      <p><strong>Note:</strong> the permissions API requires that you enable the Experimental Web Platform Features flag in Chrome: <code>chrome://flags/#enable-experimental-web-platform-features</code></p>
       <WiFiDialog />
       <ClusterView />
     </>
